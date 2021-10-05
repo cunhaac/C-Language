@@ -3,7 +3,7 @@
 /*--------------------------------------------------*/
 /*$$$$ APLICA��O                                $$$$*/
 /*$$$$ nome : <nomeAplicacao>.c                 $$$$*/
-/*$$$$ autor: <Pedro Cunha>                           $$$$*/
+/*$$$$ autor: Pedro Cunha                           $$$$*/
 /*--------------------------------------------------*/
 /*@@@@ DIRECTIVAS DE INCLUS�O                   @@@@*/
 #include <stdio.h>
@@ -26,15 +26,20 @@ int main(void) {
     system("COLOR FC");
 	
     // DECLARA��O DE VARI�VEIS E DE CONSTANTES
-	
+    int raio, altura, volume;
 		
     // SEQU�NCIA L�GICA DE INSTRU��ES
     printf("\n");
-	 
-	
-	
-	
-	    
+
+    printf("Raio: ");
+    scanf("%i", &raio);
+    printf("Altura: ");
+    scanf("%i", &altura);    
+
+    volume = (3,14159 * raio * raio * altura);
+
+    printf("O volume da lata é %d", volume);
+ 
     printf("\n\n");
     
     return 0;

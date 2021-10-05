@@ -3,7 +3,7 @@
 /*--------------------------------------------------*/
 /*$$$$ APLICA��O                                $$$$*/
 /*$$$$ nome : <nomeAplicacao>.c                 $$$$*/
-/*$$$$ autor: <Pedro Cunha>                           $$$$*/
+/*$$$$ autor: Pedro Cunha                           $$$$*/
 /*--------------------------------------------------*/
 /*@@@@ DIRECTIVAS DE INCLUS�O                   @@@@*/
 #include <stdio.h>
@@ -26,13 +26,22 @@ int main(void) {
     system("COLOR FC");
 	
     // DECLARA��O DE VARI�VEIS E DE CONSTANTES
-	
+	int A,B,C;
+    int valor;
 		
     // SEQU�NCIA L�GICA DE INSTRU��ES
     printf("\n");
-	 
-	
-	
+
+    printf("Valor de A: ");
+    scanf("%i", &A);
+    printf("Valor de B: ");
+    scanf("%i", &B);
+    printf("Valor de C: ");
+    scanf("%i", &C);
+
+    valor = (A + B + C ) * (A + B + C);
+
+    printf("O valor do quadrado da soma dos 3 números: %i", valor);
 	
 	    
     printf("\n\n");
